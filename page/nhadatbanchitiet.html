@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nhà Đất Bán Chi Tiết</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+  <header id="header-page-child">
+    <section class="main-menu">
+      <div class="container">
+        <div class="nav-pc">
+          <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png"></a>
+          </div>
+          <div class="menu-pc">
+            <ul>
+              <li><a href="../page/gioithieu.html">Giới thiệu</a></li>
+              <li><a href="../page/nhadatban.html">Nhà đất bán</a></li>
+              <li><a href="../page/nhadatchothue.html">Nhà đất cho thuê</a></li>
+              <li><a href="../page/duan.html">Dự án</a></li>
+              <li><a href="../page/tintuc.html">Tin tức</a></li>
+              <li><a href="../page/video.html">Video</a></li>
+              <li><a href="../page/xuhuong.html">Xu hướng</a></li>
+              <li><a href="../page/lienhe.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <a href="#"><i class="fas fa-phone-alt"></i>0935 542 260</a>
+          </div>
+        </div>
+        <div class="nav-mobile">
+          <button class="search-icon" onclick="openbarsearch()"><i class="fas fa-search"></i></button>
+          <div id="menu-mobile">
+            <ul>
+              <li><a href="../page/gioithieu.html">Giới thiệu</a></li>
+              <li><a href="../page/nhadatban.html">Nhà đất bán</a></li>
+              <li><a href="../page/nhadatchothue.html">Nhà đất cho thuê</a></li>
+              <li><a href="../page/duan.html">Dự án</a></li>
+              <li><a href="../page/tintuc.html">Tin tức</a></li>
+              <li><a href="../page/video.html">Video</a></li>
+              <li><a href="../page/xuhuong.html">Xu hướng</a></li>
+              <li><a href="../page/lienhe.html">Liên hệ</a></li>
+            </ul>
+            <span onclick="toggleBtn()" ><i class="far fa-times-circle" ></i></span>
+          </div>
+          <div class="logo">
+            <a href="../index.html"><img src="../img/logo.png"></a>
+          </div>
+          <button class="menu-icon" onclick="toggleBtn()"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-menu">
+      <div class="container">
+        <div class="nav-btn">
+          <div class="row bottom-menu-mb">
+            <button class="btn"><a href="../page/nhadatban.html">Nhà đất bán</a></button>
+            <button><a href="../page/nhadatchothue.html">Nhà đất cho thuê</a></button>
+          </div>
+          <div class="search-wrap" >
+                <td>
+                   <select name="loai-dat" id="loai-dat" class="single-form">
+                     <option value="" disabled selected>Loại nhà đất</option>
+                     <option>1</option>
+                     <option>2</option>
+                   </select>
+                </td>
+                <td>
+                   <select name="quan" id="quan" class="single-form">
+                      <option value="" disabled selected>Quận / Huyện</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                </td>
+                <td>
+                  <select name="dien-tich" id="dien-Diện t" class="single-form">
+                    <option value="" disabled selected>Loại nhà đất</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td>
+                    <select name="muc-gia" id="muc-gia" class="single-form">
+                      <option value="" disabled selected>Mức giá</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                </td>
+                <td>
+                  <select name="huong" id="huong" class="single-form">
+                    <option value="" disabled selected>Hướng</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="du-an" id="du-an" class="single-form">
+                    <option value="" disabled selected>Dự án</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                  <td>
+                    <button class="btn search-page"><i class="fas fa-search"></i>Tìm Kiếm</button>
+                </td>
+            </div>
+            <div style="display: none" class="btn-search-mb">
+              <button class="btn" onclick="openbarsearch()"><i class="fas fa-search"></i>Tìm Kiếm</button>
+            </div>
+
+            <div id="search-mb">
+              <span onclick="openbarsearch()"><i class="far fa-times-circle"></i></span>
+              <select name="loai-dat" id="loai-dat" class="single-form-data search-mb">
+                <option value="" disabled="" selected="">Loại nhà đất</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <select name="quan" id="quan" class="single-form-data search-mb">
+                <option value="" disabled="" selected="">Quận / Huyện</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <select name="dien-tich" id="dien-Diện t" class="single-form-data search-mb">
+                <option value="" disabled="" selected="">Loại nhà đất</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <select name="muc-gia" id="muc-gia" class="single-form-data search-mb">
+                <option value="" disabled="" selected="">Mức giá</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <select name="huong" id="huong" class="single-form-data search-mb">
+                <option value="" disabled="" selected="">Hướng</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <select name="du-an" id="du-an" class="single-form-data search-mb">
+                <option value="" disabled="" selected="">Dự án</option>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <button class="btn-search "><i class="fas fa-search" aria-hidden="true"></i>Tìm Kiếm</button>
+            </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main id="content-main">
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-12">
+            <div class="feature">
+              <img src="../img/img-slide-2.png" class="feature-image max-width"/>
+            </div>
+            <div class="image-slider mr-top-3">
+              <div class="image-item">
+                <div class="image">
+                  <img src="../img/item-1.png" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img src="../img/item-3.png" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img src="../img/item-2.png" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img src="../img/item-4.png" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img src="../img/item-3.png" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img src="../img/item-4.png" class="img-click"/>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-title-header">
+              <div class="title-header">
+                <span>Trang chủ / Nhà đất bán / Khánh Hoà / <strong>Nha Trang</strong></span>
+              </div >
+              <h3>Cần bán căn hộ 100 m2 Trinh Phong Nha Trang</h3>
+              <p>Đường Trịnh Phong , Phường Phước Hoà, Nha Trang, Khánh Hoà</p>
+            </div>
+            <div class="bottom-title">
+              <span>Giá thuê: <strong>165 triệu/m2</strong></span>
+              <span>Diện tích: <strong>100 m2</strong></span>
+              <div class="social-media">
+                <span><i class="fab fa-facebook-f"></i></span>
+                <span><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-youtube"></i></span>
+              </div>
+            </div>
+            <p class="mr-top-2"><strong>Chủ đầu tư:</strong></p>
+            <p>Occupying over 8,000 square feet, perched over 1,100 feet in the air with absolutely breaktaking panoramic 360-degree  views of all of New York City and the surrounding tri-state area, The 82nd Floor at 432 Park Avenue has been completely reimagined by one of the most sought-after design houses in  London and represents an utterly unique opportunity to own an globally significant property. Metropolitan Museum. Elegant lobby and 24 hours doorman. This is a pet-friendly building.</p>
+            <p class="mr-top-2"><strong>Đặc điểm bất động sản:</strong></p>
+            <table>
+              <tr class="color-1">
+                <td ><strong >Diện Tích:</strong></td>
+                <td >100 m2</td>
+              </tr>
+              <tr class="color-2">
+                <td ><strong>Giá bán:</strong></td>
+                <td >165 triệu/m2</td>
+              </tr>
+              <tr class="color-1">
+                <td ><strong>Số phòng ngủ:</strong></td>
+                <td >3</td>
+              </tr>
+              <tr class="color-2">
+                <td ><strong>Hướng cửa: </strong></td>
+                <td >Đông Bắc </td>
+              </tr>
+              <tr class="color-1">
+                <td ><strong>Tình trạng pháp lý:</strong></td>
+                <td >Sổ Hồng</td>
+              </tr>
+              <tr class="color-2">
+                <td ><strong>Chiều rộng:</strong></td>
+                <td >6</td>
+              </tr>
+               <tr class="color-1">
+                <td ><strong>Chiều dài:</strong></td>
+                <td >40</td>
+              </tr>
+            </table>
+            <p class="mr-top-2"><strong>Tin đăng liên quan:</strong></p>
+            <div class="more-views">
+            <div class="card none-shadown">
+              <img src="../img/item-1.png">
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 100m2 Trinh Phong Nha Trang</p>
+                <div class="item-des size-ft-2" >
+                  <p><strong>165 triệu/m2</strong></p>
+                  <p><strong>100 /m2</strong></p>
+                </div>
+                <p class="size-ft-2">Nha Trang, Khánh Hoà</p>
+                <div class="view size-ft clor">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card none-shadown">
+              <img src="../img/item-2.png">
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 510 m2 Hồng Bàng Nha Trang</p>
+                <div class="item-des size-ft-2">
+                  <p><strong>1.7 tỷ</strong></p>
+                  <p><strong>510 m2</strong></p>
+                </div>
+                <p class="size-ft-2">Nha Trang, Khánh Hoà</p>
+                <div class="view size-ft-2 clor">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card none-shadown">
+              <img src="../img/item-3.png">
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 85 m2 Trần Phú Nha Trang</p>
+                <div class="item-des size-ft-2">
+                  <p><strong>532 triệu</strong></p>
+                  <p><strong>85 m2</strong></p>
+                </div>
+                <p class="size-ft-2">Nha Trang, Khánh Hoà</p>
+                <div class="view size-ft-2 clor">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+        </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="box-contact center-text">
+              <img src="../img/logo.png">
+              <h4>Liên hệ chuyên viên</h4>
+              <p>Chuyên viên sẵn sàng hỗ trợ!<br> Tư vấn hoàn toàn miễn phí</p>
+              <button><strong><i class="fas fa-headphones-alt"></i>0258 3512 272</strong></button>
+              <div class="action-contact">
+                <span >Chat Đắc Sinh</span>
+                <span >Gọi lại cho tôi</span>
+              </div>
+            </div>
+            <div class="side-bar mr-top-2">
+            <p class="size-ft-2">NHÀ ĐẤT BÁN NHA TRANG</p>
+            <ul class="size-ft-2">
+              <li>Lộc Thọ (44)</li>
+              <li>Phước Hải (41)</li>
+              <li>Phước Hoà (27)</li>
+              <li>Phước Long (21)</li>
+              <li>Phước Tân (13)</li>
+              <li>Phước Tiến (13)</li>
+              <li>Tân Lập (20)</li>
+              <li>Vĩnh Hải (19)</li>
+              <li>Vĩnh Hiệp (17)</li>
+              <li>Vĩnh Hoà (25)</li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section id="footer-main">
+      <div class="container">
+        <div>
+          <ul class="row">
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Thông tin liên hệ</h3>
+                <div class="infor">
+                  <ul>
+                    <li ><i class="fas fa-map-marker-alt" ></i>52 bis Yersin, Phường Phương Sài Nha Trang, Khánh Hoà</li>
+                    <li ><i class="fas fa-phone-volume" ></i>02583 512 272 - 0935 542 260</li>
+                    <li ><i class="fas fa-envelope" ></i>dacsinhbds@gmail.com</li>
+                  </ul>
+                </div>
+            </li>
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Bất động sản dành cho bạn</h3>
+                <div class="infor">
+                  <ul class="list-infor">
+                    <li><a href="../page/nhadatban.html">Nhà đất bán</a></li>
+                    <li><a href="../page/nhadatchothue.html">Nhà đất cho thuê</a></li>
+                    <li><a href="../page/duan.html">Dự án</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Thông tin hữu ích</h3>
+                <div class="infor">
+                  <ul class="list-infor">
+                    <li><a href="../page/gioithieu.html">Giới thiệu chúng</a></li>
+                    <li><a href="../page/xuhuong.html">Xu hướng bất động sản</a></li>
+                    <li><a href="../page/video.html">Video Clip</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="widget_text col-lg-3 col-md-6 col-12" >
+                <h3>Đăng kí nhận thông tin</h3>
+                <div class="infor">
+                  <ul>
+                    <li>
+                      <div class="sign-up">
+                        <input type="text" name="mail" placeholder="Email...">
+                        <button type="submit" name="submit_footer">Gửi</button>
+                      </div>
+                    </li>
+                    <li>Tổng truy cập: 12345</li>
+                    <li>Online: 123</li>
+                  </ul>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="footer-bottom">
+      <div class="container">
+        <div class="row wrap-widget-bottom">
+          <div class="copyright col-lg-5 col-md-4 col-12">
+            <p>
+              © 2021. All Right reserved. Designed by Putadesign
+            </p>
+          </div>
+          <div class="logo col-lg-3 col-md-4 col-12">
+            <img src="../img/logo.png">
+          </div>
+          <div class="footer-bar col-lg-4 col-md-4 col-12">
+            <ul>
+              <li><a href="#">Điều khoản</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>  
+  </body>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+    <script src="../js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script type="text/javascript">
+    var mobilemenu =document.getElementById("menu-mobile");
+    var mobilesearch =document.getElementById("search-mb");
+    function toggleBtn(){
+      mobilemenu.classList.toggle("active");
+    }
+
+    function openbarsearch(){
+      mobilesearch.classList.toggle("active");
+    }
+
+    const imagesrow = document.querySelectorAll(".img-click");
+    imagesrow.forEach((el) => el.addEventListener("click", handleChangeImage));
+      function handleChangeImage(e) {
+        const source = e.target.getAttribute("src");
+        const featureImage = document.querySelector(".feature-image");
+        featureImage.setAttribute("src", source);
+      }
+
+
+
+      $(document).ready(function () {
+        $(".image-slider").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: true,
+          draggable: false,
+          prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fas fa-long-arrow-alt-left"></i></button>`,
+          nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fas fa-long-arrow-alt-right"></i></button>`,
+          dots: true,
+          responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true,
+                draggable: false,
+                prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fas fa-long-arrow-alt-left"></i></button>`,
+                nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fas fa-long-arrow-alt-right"></i></button>`,
+                dots: true,
+              },
+            },
+            {
+              breakpoint: 480,
+
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true,
+                draggable: false,
+                prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fas fa-long-arrow-alt-left"></i></button>`,
+                nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fas fa-long-arrow-alt-right"></i></button>`,
+                dots: true,
+              },
+            },
+          ],
+          //autoplay: true,
+          //autoplaySpeed: 1000,
+        });
+      });
+
+    new WOW().init();
+  </script>
+</html>

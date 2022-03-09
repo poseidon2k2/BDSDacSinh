@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bất động sản Đắc Sinh</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script> 
+  </head>
+  <body>
+  <header>
+    <div class="container">
+        <div class="nav-pc">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+          </div>
+          <div class="menu-pc">
+            <ul>
+              <li><a href="page/gioithieu.html">Giới thiệu</a></li>
+              <li><a href="page/nhadatban.html">Nhà đất bán</a></li>
+              <li><a href="page/nhadatchothue.html">Nhà đất cho thuê</a></li>
+              <li><a href="page/duan.html">Dự án</a></li>
+              <li><a href="page/tintuc.html">Tin tức</a></li>
+              <li><a href="page/video.html">Video</a></li>
+              <li><a href="page/xuhuong.html">Xu hướng</a></li>
+              <li><a href="page/lienhe.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <a href="#"><i class="fas fa-phone-alt"></i>0935 542 260</a>
+          </div>
+        </div>
+        <div class="nav-mobile">
+          <div id="menu-mobile">
+            <ul>
+              <li><a href="page/gioithieu.html">Giới thiệu</a></li>
+              <li><a href="page/nhadatban.html">Nhà đất bán</a></li>
+              <li><a href="page/nhadatchothue.html">Nhà đất cho thuê</a></li>
+              <li><a href="page/duan.html">Dự án</a></li>
+              <li><a href="page/tintuc.html">Tin tức</a></li>
+              <li><a href="page/video.html">Video</a></li>
+              <li><a href="page/xuhuong.html">Xu hướng</a></li>
+              <li><a href="page/lienhe.html">Liên hệ</a></li>
+            </ul>
+            <span onclick="toggleBtn()"><i class="far fa-times-circle"></i></span>
+          </div>
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+          </div>
+          <button class="menu-icon" onclick="toggleBtn()"><i class="fas fa-bars"></i></button>
+        </div>
+      </div>
+      <section id="header-cover" >
+          <div class="container">
+              <h3 class="page-title">Đi tìm ngôi nhà hoàn hảo cho bạn </h3>
+              <p>An tâm với chọn bất động sản tại Sàn giao dịch Đắc Sinh<i class="fas fa-check"></i></p>
+            <div class="row cate">
+              <span class="current"><a href="page/nhadatban.html">Nhà đất bán</a></span>
+              <span ><a href="page/nhadatchothue.html">Nhà đất cho thuê</a></span>
+            </div>
+            <div class="overload">
+              <div class="wrap-filter">
+                <td>
+                   <select name="loai-dat" id="loai-dat" class="single-form-data">
+                     <option value="" disabled selected>Loại nhà đất</option>
+                     <option>1</option>
+                     <option>2</option>
+                   </select>
+                </td>
+                <td>
+                   <select name="quan" id="quan" class="single-form-data">
+                      <option value="" disabled selected>Quận / Huyện</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                </td>
+                <td>
+                  <select name="dien-tich" id="dien-Diện t" class="single-form-data">
+                    <option value="" disabled selected>Loại nhà đất</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td>
+                    <select name="muc-gia" id="muc-gia" class="single-form-data">
+                      <option value="" disabled selected>Mức giá</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                </td>
+                <td>
+                  <select name="huong" id="huong" class="single-form-data">
+                    <option value="" disabled selected>Hướng</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                <td>
+                  <select name="du-an" id="du-an" class="single-form-data">
+                    <option value="" disabled selected>Dự án</option>
+                    <option>1</option>
+                    <option>2</option>
+                  </select>
+                </td>
+                  <td>
+                    <button class="btn-search"><i class="fas fa-search"></i>Tìm Kiếm</button>
+                </td>
+              </div>
+            </div>
+      </section>
+  </header>
+  <main>
+    <section class="wrap-box-item">
+        <div class="container">
+          <div class="header-title">
+            <h3>Nhà đất bán mới nhất</h3>
+            <button class="btn-view-all">Xem tất cả</button>
+          </div>
+          <div class="cards" >
+            <div class="card wow fadeInUp" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <img src="img/item-1.png"/>
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 100m2 Trịnh Phong Nha Trang</p>
+                <div class="item-des weight">
+                  <p>165 triệu/m2</p>
+                  <p>100 m2</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="view color">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <img src="img/item-2.png"/>
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 510m2 Hồng Bàng Nha Trang</p>
+                <div class="item-des weight">
+                  <p>1.7 tỷ/m2</p>
+                  <p>510 m2</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="view color">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card wow fadeInUp" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+              <img src="img/item-3.png"/>
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 85m2 Trần Phú Nha Trang</p>
+                <div class="item-des weight">
+                  <p>532 triệu</p>
+                  <p>85 m2</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="view color">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="card wow fadeInUp" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+              <img src="img/item-4.png"/>
+              <div class="content-box">
+                <p class="title-item">Cần bán căn hộ 100m2 Trịnh Phong Nha Trang</p>
+                <div class="item-des weight">
+                  <p>532 triệu</p>
+                  <p>85 m2</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="view color">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+  </section>
+
+      <section id="house-rent">
+        <div class="container">
+          <div class="house-rent-header">
+            <h3>Nhà đất cho thuê mới nhất</h3>
+            <button class="btn-view-all">Xem tất cả</button>
+          </div>
+          <div class="cards-2">
+            <div class="card-2 wow bounceInLeft" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceInLeft;">
+              <img src="img/nha-thue-1.png"/>
+              <div class="content-box">
+                <p class="title-item">Cho thuê căn hộ VCN Phước Hải Nha Trang</p>
+                <div class="item-des weight">
+                  <p>5.5 triệu/tháng</p>
+                  <p>65 m2</p>
+                  <p>2 <i class="fas fa-bed"></i></p>
+                  <p>2 <i class="fas fa-bath"></i></p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="view color">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-2 wow bounceInRight" style="visibility: visible; animation-delay: 0.4s; animation-name: bounceInRight;">
+              <img src="img/nha-thue-2.png"/>
+              <div class="content-box">
+                <p class="title-item">Cho thuê Shophouse trung tâm Nha Trang</p>
+                <div class="item-des weight">
+                  <p>15 triệu/tháng</p>
+                  <p>200 m2</p>
+                  <p>2 <i class="fas fa-bed"></i></p>
+                  <p>2 <i class="fas fa-bath"></i></p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="view color">
+                  <p>532 đã xem</p>
+                  <i class="fas fa-eye"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-2 wow bounceInLeft" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceInLeft;">
+              <img src="img/nha-thue-3.png">
+              <div class="content-box">
+                <p class="title-item">Cho thuê nhà nguyên căn 2 lầu TP Cam Ranh</p>
+                <div class="item-des weight">
+                  <p>32 triệu/tháng</p>
+                  <p>250 m2</p>
+                  <p>4 <i class="fas fa-bed"></i></p>
+                  <p>4 <i class="fas fa-bath"></i></p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="view color">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="card-2 wow bounceInRight" style="visibility: visible; animation-delay: 0.6s; animation-name: bounceInRight;">
+              <img src="img/nha-thue-4.png">
+              <div class="content-box">
+                <p class="title-item">Cho thuê nhà nguyên căn 2 lầu TP Cam Ranh</p>
+                <div class="item-des weight">
+                  <p>32 triệu/tháng</p>
+                  <p>250 m2</p>
+                  <p>4 <i class="fas fa-bed"></i></p>
+                  <p>4 <i class="fas fa-bath"></i></p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="view color">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="card-2 wow bounceInLeft" style="visibility: visible; animation-delay: 0.8s; animation-name: bounceInLeft;">
+              <img src="img/nha-thue-5.png">
+              <div class="content-box">
+                <p class="title-item">Cho thuê mặt bằng TX Ninh Hoà, Khánh </p>
+                <div class="item-des weight">
+                  <p>7 triệu/tháng</p>
+                  <p>85 m2</p>
+                  <p>2 <i class="fas fa-bed"></i></p>
+                  <p>2 <i class="fas fa-bath"></i></p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="view color">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+            </div>
+            <div class="card-2 wow bounceInRight" style="visibility: visible; animation-delay: 0.8s; animation-name: bounceInRight;">
+              <img src="img/nha-thue-6.png">
+              <div class="content-box">
+                <p class="title-item">Cho thuê văn phòng nhà Đắc Sinh Nha Trang</p>
+                <div class="item-des weight">
+                  <p>5 triệu/tháng</p>
+                  <p>85 m2</p>
+                  <p>2 <i class="fas fa-bed"></i></p>
+                  <p>2 <i class="fas fa-bath"></i></p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="view color">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section  class="wrap-box-item">
+      <div class="container">
+        <h3>Dự án nổi bật</h3>
+        <div class="image-slider">
+          <div class="image-item" >
+            <div class="image">
+              <img src="img/pr-1.png"/>
+            </div>
+            <div class="content-pr">
+               <p class="title-content-box">Khu đô thị An Bình Tân Nha Trang</p>
+                  <div class="price-content-box">
+                    <p>28 - 30 triệu/tháng</p>
+                  </div>
+                  <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="footer-box">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+            </div>
+          </div>
+          <div class="image-item">
+            <div class="image">
+              <img src="img/pr-2.png"/>
+            </div>
+            <div class="content-pr">
+              <p class="title-content-box">Khu đô thị Lê Hồng Phong Nha Trang</p>
+                 <div class="price-content-box">
+                    <p>28 - 30 triệu/tháng</p>
+                  </div>
+                  <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                  <div class="footer-box">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
+          </div>
+          <div class="image-item">
+            <div class="image">
+              <img src="img/pr-3.png"/>
+            </div>
+            <div class="content-pr">
+              <p class="title-content-box">Khu đô thị cao cấp Mỹ Gia Nha Trang</p>
+                <div class="price-content-box">
+                  <p>28 - 30 triệu/tháng</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="footer-box">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                </div>
+             </div>
+          </div>
+          <div class="image-item">
+            <div class="image">
+              <img src="img/pr-4.png"/>
+            </div>
+            <div class="content-pr">
+              <p class="title-content-box">Khu đô thị An Bình Tân Nha Trang</p>
+                <div class="price-content-box">
+                  <p>28 - 30 triệu/tháng</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="footer-box">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                </div>
+              </div>
+          </div>
+          <div class="image-item">
+            <div class="image">
+              <img src="img/pr-5.png"/>
+            </div>
+            <div class="content-pr">
+              <p class="title-content-box">Khu đô thị An Bình Tân Nha Trang</p>
+                <div class="price-content-box">
+                  <p>28 - 30 triệu/tháng</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="footer-box">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                </div>
+             </div>
+          </div>
+          <div class="image-item">
+            <div class="image">
+              <img src="img/pr-5.png"/>
+            </div>
+            <div class="content-pr">
+              <p class="title-content-box">Khu đô thị An Bình Tân Nha Trang</p>
+                <div class="price-content-box">
+                  <p>28 - 30 triệu/tháng</p>
+                </div>
+                <p class="infor-adrr">Nha Trang, Khánh Hoà</p>
+                <div class="footer-box">
+                    <p>532 đã xem</p>
+                    <i class="fas fa-eye"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="gallery">
+    <div class="container">
+      <h3>Bạn đang tìm bất động sản ở đâu?</h3>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 wow bounceInLeft" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInLeft;">
+          <div class="row">
+            <img src="img/where-1.png" class="img-news mr-right"/>
+            <img src="img/where-3.png" class="img-news"/>
+          </div>
+          <div class="row mr-top-bot">
+            <img src="img/where-2.png" class="img-news mr-right"/>
+            <img src="img/where-4.png" class="img-news" />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+          <img src="img/where-5.png" class="main-img" />
+        </div>
+        <div class="col-lg-4 col-md-12 col-12 wow bounceInRight" style="visibility: visible; animation-delay: 0.5s; animation-name: bounceInRight;">
+          <div class="row">
+            <img src="img/where-6.png" class="img-news mr-right"/>
+            <img src="img/where-8.png" class="img-news"/>
+          </div>
+          <div class="row" style="margin-top: 30px">
+            <img src="img/where-7.png" class="img-news mr-right"/>
+            <img src="img/where-9.png" class="img-news"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="news">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 box-content wow fadeInUp">
+              <h2 >Tin tức bất động sản</h2>
+              <div class="card-4" >
+                <img src="img/news-img-1.png"/>
+                <ul>
+                  <li class="news-title">Thị trường bất động sản du lịch Khánh Hoà ra sao?</li>
+                  <li> Khánh Hoà "siết" tình trạng phân lô bán nền trên địa bàn tỉnh</li>
+                  <li>Khánh Hoà "siết" tình trạng phân lô bán nền trên địa bàn tỉnh</li>
+                  <li>Ba phương án đầu tư cao tốc Khánh Hoà - Buôn Ma Thuột</li>
+                  <li><a href="#" class="view-all">Xem tất cả</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 box-content wow fadeInUp">
+              <h2>Video Clip</h2>
+              <div class="card-4 video-news" >
+                <img src="img/news-img-2.png"/>
+                <ul class="content-video-news">
+                  <li class="news-title bor-col" >Video giới thiệu dự án An Bình Tân Nha Trang</li>
+                  <li class="video-des bor-col">
+                    <img src="img/vd-1.png" class="img-vd">
+                    <p>Video giới thiệu dự án khu đô thị Mỹ Gia</p>
+                  </li>
+                  <li class="video-des bor-col">
+                    <img src="img/vd-2.png" class="img-vd">
+                    <p>Video giới thiệu dự án khu đô thị Mỹ Gia</p>
+                  </li>
+                  <li class="video-des">
+                    <img src="img/vd-3.png" class="img-vd">
+                    <p>Video giới thiệu dự án khu đô thị Mỹ Gia</p>
+                  </li>
+                </ul>
+             </div> 
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 box-content  wow fadeInUp">
+              <h2 >Xu hướng</h2>
+              <div class="card-4" >
+                <img src="img/news-img-3.png"/>
+                <ul>
+                  <li class="news-title">Dự báo xu hướng đầu tư bất động sản trong năm 2022</li>
+                  <li>Một số xu hướng mới của thị trường bất động sản cao cấp</li>
+                  <li>Có nên "liều" đầu tư vào sản phẩm phi bất động sản?</li>
+                  <li>Vì sao doanh nghiệp lại e dè bất động sản hàng hiệu?</li>
+                  <li><a href="#" class="view-all">Xem tất cả</a></li>
+                </ul>
+            </div>
+            </div>
+          </div>
+      </div>
+  </section>
+  </main>
+  <footer>
+    <section id="footer-main">
+      <div class="container">
+        <div>
+          <ul class="row">
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Thông tin liên hệ</h3>
+                <div class="infor">
+                  <ul>
+                    <li><i class="fas fa-map-marker-alt" ></i>52 bis Yersin, Phường Phương Sài Nha Trang, Khánh Hoà</li>
+                    <li><i class="fas fa-phone-volume"></i>02583 512 272 - 0935 542 260</li>
+                    <li><i class="fas fa-envelope"></i>dacsinhbds@gmail.com</li>
+                  </ul>
+                </div>
+            </li>
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Bất động sản dành cho bạn</h3>
+                <div class="infor">
+                  <ul class="list-infor">
+                    <li><a href="page/nhadatban.html">Nhà đất bán</a></li>
+                    <li><a href="page/nhadatchothue.html">Nhà đất cho thuê</a></li>
+                    <li><a href="page/duan.html">Dự án</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Thông tin hữu ích</h3>
+                <div class="infor">
+                  <ul class="list-infor">
+                    <li><a href="page/gioithieu.html">Giới thiệu chúng</a></li>
+                    <li><a href="page/xuhuong.html">Xu hướng bất động sản</a></li>
+                    <li><a href="page/video.html">Video Clip</a></li>
+                  </ul>
+                </div>
+            </li>
+            <li class="widget_text col-lg-3 col-md-6 col-12">
+                <h3>Đăng kí nhận thông tin</h3>
+                <div class="infor">
+                  <ul>
+                    <li>
+                      <div class="sign-up">
+                        <input type="text" name="mail" placeholder="Email...">
+                        <button type="submit" name="submit_footer">Gửi</button>
+                      </div>
+                    </li>
+                    <li>Tổng truy cập: 12345</li>
+                    <li>Online: 123</li>
+                  </ul>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section id="footer-bottom">
+      <div class="container">
+        <div class="row wrap-widget-bottom">
+          <div class="copyright col-lg-5 col-md-4 col-12">
+            <p>
+              © 2021. All Right reserved. Designed by Putadesign
+            </p>
+          </div>
+          <div class="logo col-lg-3 col-md-4 col-12">
+            <img src="img/logo.png">
+          </div>
+          <div class="footer-bar col-lg-4 col-md-4 col-12">
+            <ul>
+              <li><a href="#">Điều khoản</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>  
+  </body>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+    var mobilemenu =document.getElementById("menu-mobile");
+    function toggleBtn(){
+      mobilemenu.classList.toggle("active");
+    }
+
+
+    $(document).ready(function () {
+      $(".image-slider").slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        draggable: false,
+        prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="fas fa-arrow-left"></i></button>`,
+        nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="fas fa-arrow-right"></i></button>`,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              arrows: false,
+              infinite: false,
+            },
+          },
+        ],
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+
+    new WOW().init();
+  </script>
+</html>
