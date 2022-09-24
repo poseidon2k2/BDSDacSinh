@@ -386,6 +386,7 @@
 	.nav-mobile{
 		display: flex;
 		justify-content: space-between;
+		margin: 10px 0;
 	}
 
 	.nav-mobile .menu-pc ul{
@@ -431,8 +432,8 @@
 
 
 	.nav-mobile button{
-		height: 60px;
-		width: 60px;
+		height: 50px;
+		width: 50px;
 		border-radius: 15px;
 		background: white;
 	}
